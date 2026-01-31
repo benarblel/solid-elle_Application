@@ -1,0 +1,305 @@
+/* Variables couleurs */
+:root {
+    --color-white: rgb(255, 255, 255);
+    --color-main: #FF8D8D;
+}
+
+/* reinitialisation */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* style global */
+body {
+    background-color: var(--color-white);
+    font-family: "Yrsa", serif;
+    color: #2d2d2d;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: var(--color-main);
+}
+
+
+
+h3 {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 35px;
+}
+
+a {
+    display: inline-block;
+}
+
+/* container */
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.container.small {
+    max-width: 800px;
+}
+
+
+/* header */
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
+
+    nav {
+        display: flex;
+        gap: 160px;
+        margin-top: 40px;
+        position: absolute;
+        inset: 0 auto auto 50%;
+        transform: translateX(-50%);
+        border-radius: 20px;
+        background-color: var(--color-white);
+        padding: 12px 180px;
+        z-index: 1;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: var(--color-main);
+        }
+    }
+
+    #heroContent {
+        flex: 1;
+
+        a {
+            border-radius: 20px;
+            padding: 20px 40px;
+            text-decoration: none;
+            background-color: var(--color-main);
+            color: var(--color-white);
+        }
+    }
+
+    .heroGallery {
+        flex: 1;
+        height: 100%;
+        border: 5px solid red;
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            animation: spin 10s infinite linear;
+            padding-right: 1em;
+
+            .firstPicture {
+                flex: 0 0 5em;
+                height: 5em;
+                padding: 1em;
+                background-color: blue;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+
+/* Pourquoi */
+#pourquoi {
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+    .card{
+        width: 170px;
+    }
+    .containerCard{
+        margin-top: 64px;
+    }
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+}
+
+.titleContainer {
+
+    p {
+        display: inline;
+        text-align: center;
+    }
+
+
+}
+
+#image {
+    display: block;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: inherit;
+    width: 240px;
+    flex-direction: column;
+}
+
+#image {
+    width: 100px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+
+/* JALIKHA */
+h2 {
+    color: #FF8D8D;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    color: #FF8D8D;
+    text-align: center;
+}
+
+p {
+    color: #403E46;
+}
+
+.containerCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+
+.sectionPadding {
+    padding: 120px 24px;
+}
+
+#partenaires {
+    background-color: #FF8D8D;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 222px;
+    padding: 54px;
+    gap: 170px;
+
+    img {
+        height: 100%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+    }
+
+
+}
+
+/* YAKINE */
+
+
+/* DAVID */
+
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+
+@keyframes spin {
+    from {
+        translate: 0 0;
+    }
+
+    to {
+        translate: 0 -100%;
+    }
+}
+
+.temoignage {
+    width: 30%;
+    padding: 20px;
+    box-shadow: 1px 2px 12px 4px rgba(76, 76, 76, 0.5);
+    border-radius: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+
+    }
+}
+
+.namestar {
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.inscription{
+}
+
+
+.left-2 {
+  flex: 1;
+}
+
+.right-2 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.renseignement{
+    display: flex;
+    justify-content: right;
+}
+.abonner{
+     display: flex;
+    justify-content: right;
+}
+
+
+
+
